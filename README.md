@@ -4,7 +4,23 @@ npx create-react-app tlv3
 
 cd tlv3  
 
+npm install bulma  
+
 npm start  
+
+need this yaml  
+
+runtime: nodejs16
+handlers:
+  # Serve all static files with url ending with a file extension
+  - url: /(.*\..+)$
+    static_files: build/\1
+    upload: build/(.*\..+)$
+  # Catch all handler to index.html
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
+
 
 
 
