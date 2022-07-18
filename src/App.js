@@ -246,6 +246,9 @@ function App() {
                                  <p class="mt-3 mb-3">
                                   This will give you a few simple Agents (it's elixir, don't worry) that will pull data from DYDX (it's free), and store in a database.  Later, you'll make some assets with this data.
                                 </p>
+                                 <p class="mt-3 mb-3">
+                                  Note that when first trying this out, just use the _min calculations, as you'll only need to run the data piece for 30 mins, to build up enough data.
+                                </p>
 
                               </div>
                             </div>
@@ -275,6 +278,9 @@ function App() {
                                  <p class="mt-3 mb-3">
                                 A simple set of tools for taking data out of postgres, making some clusters, and then creating assets - in this case, SVGs, PNGs, and CSVs.
                                 </p>
+                                 <p class="mt-3 mb-3">
+                                  Use the example script, against min, when first trying this out.
+                                </p>
 
                               </div>
                             </div>
@@ -303,7 +309,7 @@ function App() {
                               <div class="content">
                                 <a class="button is-link" href="https://github.com/dosterthebernese/pds">Repo at GitHub</a>
                                  <p class="mt-3 mb-3">
-                                  A command line toolset for registering your assets on chain, bundling them into tokens, and offering them to users.
+                                  A command line toolset for registering your assets on chain, bundling them into tokens, and offering them to users.  This is wired to our test net, and has a test set of creds.  We'll stub out for you, where to change to make this your own.
                                 </p>
 
                               </div>
