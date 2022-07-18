@@ -8,7 +8,7 @@ function App() {
   const [isViewingDocumentation, setIsViewingDocumentation] = useState(false);
   const [isViewingHome, setIsViewingHome] = useState(true);
   const [isViewingOverview, setIsViewingOverview] = useState(true);
-  const [isViewingRepos, setIsViewingRepos] = useState(true);
+  const [isViewingRepos, setIsViewingRepos] = useState(false);
 
   async function onClickedDocumentation(event) {
     setIsViewingHome(false)
