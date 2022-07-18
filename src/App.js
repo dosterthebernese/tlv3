@@ -206,6 +206,9 @@ function App() {
                                  <p class="mb-3">
                                   These are the same code repos we at TradeLlama use for our clustering data sets.  
                                   </p>
+                                 <p class="mb-3">
+                                  While we chose Elixir and R for these demo tools, we also have versions in Rust, which we will open source in Q3.  We liked Elixir, mostly because we can use the same repo for Agents (daemons), but easily have an interactive session, for playing.  
+                                  </p>
                               </div>
                             </div>
                           </div>
@@ -250,6 +253,10 @@ function App() {
                                   This will give you a few simple Agents (it's elixir, don't worry) that will pull data from DYDX (it's free), and store in a database.  Later, you'll make some assets with this data.
                                 </p>
                                  <p class="mt-3 mb-3">
+                                  The README has step by step instructions.  At a high level, you will install Postgres, and build a quick DB that loads some DYDX asset pair data.
+                                </p>
+
+                                 <p class="mt-3 mb-3">
                                   Note that when first trying this out, just use the _min calculations, as you'll only need to run the data piece for 30 mins, to build up enough data.
                                 </p>
 
@@ -282,7 +289,10 @@ function App() {
                                 A simple set of tools for taking data out of postgres, making some clusters, and then creating assets - in this case, SVGs, PNGs, and CSVs.
                                 </p>
                                  <p class="mt-3 mb-3">
-                                  Use the example script, against min, when first trying this out.
+                                R is a great framework for quickly pulling data from Postgres, and applying various ML techniques.  Our favorite on the Llama farm is Gaussian K-Means.
+                                </p>
+                                 <p class="mt-3 mb-3">
+                                  Use the example script, against min, when first trying this out.  (Rscript example.r)
                                 </p>
 
                               </div>
@@ -313,6 +323,9 @@ function App() {
                                 <a class="button is-link" href="https://github.com/dosterthebernese/pds">Repo at GitHub</a>
                                  <p class="mt-3 mb-3">
                                   A command line toolset for registering your assets on chain, bundling them into tokens, and offering them to users.  This is wired to our test net, and has a test set of creds.  We'll stub out for you, where to change to make this your own.
+                                </p>
+                                 <p class="mt-3 mb-3">
+                                  This is the only repo you really need, if you have a directory of assets you'd like to play with on your own.  It's meant for iex (interactive) usage, and offers various common wallet function calls.
                                 </p>
 
                               </div>
