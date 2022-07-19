@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import bubbles from './bubbles.svg';
 import './App.css';
 import 'bulma/css/bulma.css'
 import React, { useState, useEffect } from "react";
@@ -117,23 +118,25 @@ function App() {
 
                 <section class="hero is-info mb-3">
                   <div class="hero-body">
-                    <nav class="breadcrumb is-centered is-large has-arrow-separator" aria-label="breadcrumbs">
-                      <ul>
-                        {isViewingOverview == true ? (
-                          <li class="is-active has-text-warning-dark"><a href="#">Overview</a></li>
-                        ) : (
-                          <li><a href="#" onClick={e => onClickedHome(e)}>Overview</a></li>
-                        )}
-                        {isViewingRepos== true ? (
-                          <li class="is-active has-text-warning-dark"><a href="#">Install Repos</a></li>
-                        ) : (
-                          <li><a href="#" onClick={e => onClickedRepos(e)}>Install Repos</a></li>
-                        )}
+                    <nav class="breadcrumb is-centered is-large has-dot-separator" aria-label="breadcrumbs">
+                      <p class="title">                      
+                        <ul>
+                          {isViewingOverview == true ? (
+                            <li class="is-active has-text-warning-dark"><a href="#">Overview</a></li>
+                          ) : (
+                            <li><a href="#" onClick={e => onClickedHome(e)}>Overview</a></li>
+                          )}
+                          {isViewingRepos== true ? (
+                            <li class="is-active has-text-warning-dark"><a href="#">Install Repos</a></li>
+                          ) : (
+                            <li><a href="#" onClick={e => onClickedRepos(e)}>Install Repos</a></li>
+                          )}
 
-                        <li><a href="#">PDS Portfolio</a></li>
-                      </ul>
+                          <li><a href="#">PDS Portfolio</a></li>
+                        </ul>
+                      </p>
                     </nav>                                
-                    <p class="title">It's really as easy as install, run, play, mint.</p>
+                    <p class="sub-title">It's really as easy as install, run, play, mint.</p>
                   </div>
                 </section>
 
