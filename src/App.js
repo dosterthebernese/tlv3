@@ -118,27 +118,24 @@ function App() {
 
                 <section class="hero is-info mb-3">
                   <div class="hero-body">
-                    <nav class="breadcrumb is-centered is-large has-dot-separator" aria-label="breadcrumbs">
-                      <p class="title">                      
-                        <ul>
-                          {isViewingOverview == true ? (
-                            <li class="is-active has-text-warning-dark"><a href="#">Overview</a></li>
-                          ) : (
-                            <li><a href="#" onClick={e => onClickedHome(e)}>Overview</a></li>
-                          )}
-                          {isViewingRepos== true ? (
-                            <li class="is-active has-text-warning-dark"><a href="#">Install Repos</a></li>
-                          ) : (
-                            <li><a href="#" onClick={e => onClickedRepos(e)}>Install Repos</a></li>
-                          )}
-
-                          <li><a href="#">PDS Portfolio</a></li>
-                        </ul>
-                      </p>
-                    </nav>                                
+                    <p class="title">TradeLlama Wants You to Use Their Code!</p>
                     <p class="sub-title">It's really as easy as install, run, play, mint.</p>
                   </div>
                 </section>
+
+                <div class="container mb-5">
+                  {isViewingOverview == true ? (
+                    <button class="button is-rounded is-focused mr-3" disabled>Overview</button>
+                  ) : (
+                    <button class="button is-rounded mr-3" onClick={e => onClickedHome(e)}>Overview</button>
+                  )}
+
+                {isViewingRepos == true ? (
+                    <button class="button is-rounded is-focused" disabled>Repos</button>
+                  ) : (
+                    <button class="button is-rounded"  onClick={e => onClickedRepos(e)}>Repos</button>
+                  )}
+                </div>
 
 
                 <div class="columns">
