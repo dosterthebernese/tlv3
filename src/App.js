@@ -119,7 +119,7 @@ function App() {
 
           <section class="hero is-info mb-3" >
             <div class="hero-body">
-              <h1 class="title">Llamas Wants You to Use Their Code!</h1>
+              <h1 class="title">Llamas Want You to Use Their Code!</h1>
               <h3 class="sub-title">For years, we have been applying machine learning algorithms to trade and reference data for signalling and regulatory purposes.  We distribute our data, a blend of SVGs, PNGs (thumbnails), CSVs, and JSON (metadata), by vaulting, registering, and bundling into tokens.  We encourage you to do the same.</h3>
             </div>
           </section>
