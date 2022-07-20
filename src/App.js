@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import bubbles from './bubbles.svg';
+import rlogo from './Rlogo.svg';
+import plogo from './Postgres.png';
+import elogo from './Elixir.png';
 import './App.css';
 import 'bulma/css/bulma.css'
 import React, { useState, useEffect } from "react";
@@ -256,6 +259,9 @@ function App() {
                              <p class="mt-3 mb-3">
                               Note that when first trying this out, just use the _min calculations, as you'll only need to run the data piece for 30 mins, to build up enough data.
                             </p>
+                            <img src={elogo} class="image mb-3 is-inline-block"/>
+                            <img src={plogo} class="image is-96x96 is-inline-block"/>
+
 
                           </div>
                         </div>
@@ -291,6 +297,8 @@ function App() {
                              <p class="mt-3 mb-3">
                               Use the example script, against min, when first trying this out.  (Rscript example.r)
                             </p>
+                            <img src={rlogo} class="image is-128x128 mb-3 is-inline-block"/>
+                            <img src={plogo} class="image is-96x96 is-inline-block"/>
 
                           </div>
                         </div>
@@ -324,6 +332,7 @@ function App() {
                              <p class="mt-3 mb-3">
                               This is the only repo you really need, if you have a directory of assets you'd like to play with on your own.  It's meant for iex (interactive) usage, and offers various common wallet function calls.
                             </p>
+                            <img src={elogo} class="image mb-3  is-inline-block"/>
 
                           </div>
                         </div>
